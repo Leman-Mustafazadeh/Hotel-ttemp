@@ -1,0 +1,305 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <!-- work-sans fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Courgette&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+  <!-- cdnjs libraries font awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- bootstrap link -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+
+<body>
+  <header>
+    <div class="container ">
+      <div class="head-bet">
+        <div class="head d-flex align-items-center justify-content-between">
+          <div class="head-left">
+            <a href="">Hotell</a>
+          </div>
+
+          <div class="head-nav">
+            <ul class="d-flex align-items-center">
+              <li><a href="./home.html" class="home">Home</a></li>
+              <li>
+                <a href="" class="home-item des">
+                  <div>Destination</div> <i class="fa-solid fa-chevron-down"></i>
+                </a>
+                <ul class="des-item">
+                  <li><a href="">Menu One</a></li>
+                  <li><a href="">Menu Two</a></li>
+                  <li class="d-flex align-items-center  drop">
+                    <a href="">Dropdown </a><i class="fa-solid fa-chevron-right"></i>
+                    <ul class="des-title">
+                      <li><a href="">Sub Menu One</a></li>
+                      <li><a href="">Sub Menu Two</a></li>
+                      <li><a href="">Sub Menu Three</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><a href="./service.html" class="home-item">Services</a></li>
+              <li><a href="./about.html" class="home-item">About</a></li>
+              <li><a href="./contact.html" class="home-item">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="head-right">
+            <a href=""><i class="fa-solid fa-phone"></i></a>
+            <span>123-489-9381</span>
+          </div>
+        </div>
+
+        <div class="head-icon">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="service-site-contact">
+      <div class="container">
+        <div class="site-item-contact">
+          <h1>Contact</h1>
+          <p>
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="touch">
+          <h2>GET IN TOUCH</h2>
+          <p>
+            Far far away, behind the word mountains, far from the countries
+            Vokalia and Consonantia, there live the blind texts. Separated
+            they live in Bookmarksgrove right at the coast of the Semantics, a
+            large language ocean.
+          </p>
+          <div class="touch-wrap">
+            <div class="touch-left">
+              <form class="contactF" action="">
+                <div class="form-head">
+                  <div class="form-title">
+                    <label for="text">Name</label>
+                    <input class="contactT" required type="text" name="text" />
+                  </div>
+                  <div class="form-title">
+                    <label for="email">Email</label>
+                    <input class="contactE" required type="email" name="email" />
+                  </div>
+                </div>
+                <div class="form-title">
+                  <label for="message">Message</label>
+                  <textarea class="contactA" required minlength="10"  name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <button class="sendBTN">Send Message</button>
+              </form>
+            </div>
+            <div class="touch-right row">
+              <div class="touch-right-item col-6">
+                <h3>Address</h3>
+                <p>43 Raymouth Rd. Baltemoer, London 3910</p>
+              </div>
+              <div class="touch-right-item col-6">
+                <h3>Phone</h3>
+                <p>
+                  +1 939 3839 399 <br />
+                  +1 492 5991 203
+                </p>
+              </div>
+
+              <div class="touch-right-item col-6">
+                <h3>Follow</h3>
+                <ul class="foot-ul">
+                  <li>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-brands fa-pinterest"></i></a>
+                  </li>
+                  <li>
+                    <a href=""><i class="fa-solid fa-basketball"></i></a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="touch-right-item col-6">
+                <h3>Email</h3>
+                <a href="#" class="email">info@mydomain.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Name</th>
+          <th scope="col">Mail</th>
+          <th scope="col">Message</th>
+        </tr>
+      </thead>
+      <tbody class="tb">
+      
+      </tbody>
+    </table>
+    
+    <section class="instagram-head">
+      <div class="container instagram-river">
+        <h2>INSTAGRAM</h2>
+        <p>
+          A small river named Duden flows by their place and supplies it with
+          the necessary regelialia. It is a paradisematic country, in which
+          roasted parts of sentences fly into your mouth.
+        </p>
+      </div>
+      <div class="instagram-title">
+        <div class="instagram-item">
+          <img src="https://preview.colorlib.com/theme/hotell/images/img_4.jpg.webp" alt="" />
+          <div class="instagram-logo">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+
+        <div class="instagram-item">
+          <img src="https://preview.colorlib.com/theme/hotell/images/img_3.jpg.webp" alt="" />
+          <div class="instagram-logo">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+
+        <div class="instagram-item">
+          <img src="https://preview.colorlib.com/theme/hotell/images/img_1.jpg.webp" alt="" />
+          <div class="instagram-logo">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+
+        <div class="instagram-item">
+          <img src="https://preview.colorlib.com/theme/hotell/images/img_2.jpg.webp" alt="" />
+          <div class="instagram-logo">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+
+        <div class="instagram-item">
+          <img src="https://preview.colorlib.com/theme/hotell/images/img_4.jpg.webp" alt="" />
+          <div class="instagram-logo">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="foot-head">
+        <div class="foot-item">
+          <h2>Home</h2>
+          <ul>
+            <li><a href="">About us</a></li>
+            <li><a href="">Places</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Destination</a></li>
+            <li><a href="">Terms</a></li>
+            <li><a href="">Privacy</a></li>
+          </ul>
+        </div>
+
+        <div class="foot-item">
+          <h2>Practice Area</h2>
+          <ul>
+            <li><a href="">Travel</a></li>
+            <li><a href="">Popular places</a></li>
+            <li><a href="">Destination</a></li>
+            <li><a href="">Tour</a></li>
+            <li><a href="">Family Vacation</a></li>
+          </ul>
+        </div>
+
+        <div class="foot-item">
+          <h2>Services</h2>
+          <ul>
+            <li><a href="">Tour</a></li>
+            <li><a href="">Swimming</a></li>
+            <li><a href="">Kayak</a></li>
+            <li><a href="">Surfing</a></li>
+          </ul>
+        </div>
+
+        <div class="foot-item">
+          <h2>Contact</h2>
+          <span>43 Raymouth Rd. Baltemoer, London 3910</span>
+          <ul>
+            <li><a href="">+1(123)-456-7890 </a></li>
+            <li><a href="">+1(123)-456-7890 </a></li>
+            <li><a href="">info@mydomain.com</a></li>
+          </ul>
+          <p>Connect</p>
+          <ul class="foot-ul">
+            <li>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-brands fa-pinterest"></i></a>
+            </li>
+            <li>
+              <a href=""><i class="fa-solid fa-basketball"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="foot-copy">
+        Copyright ©2024 All rights reserved | This template is made with
+        <i class="fa-solid fa-heart"></i> by Colorlib
+      </p>
+    </div>
+  </footer>
+  <script src="cotact.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+  <script src="index.js"></script> -->
+</body>
+
+</html>

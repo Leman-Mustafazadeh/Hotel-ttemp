@@ -1,0 +1,539 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- work-sans fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Courgette&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- cdnjs libraries font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- bootstrap link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <!-- main css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="head-bet">
+          <div class="head d-flex align-items-center justify-content-between">
+            <div class="head-left">
+              <a href="">Hotell</a>
+            </div>
+
+            <div class="head-nav">
+              <ul class="d-flex align-items-center">
+                <li><a href="./home.html" class="home">Home</a></li>
+                <li>
+                  <a href="" class="home-item des">
+                    <div>Destination</div>
+                    <i class="fa-solid fa-chevron-down"></i
+                  ></a>
+                  <ul class="des-item">
+                    <li><a href="">Menu One</a></li>
+                    <li><a href="">Menu Two</a></li>
+                    <li class="d-flex align-items-center drop">
+                      <a href="">Dropdown </a
+                      ><i class="fa-solid fa-chevron-right"></i>
+                      <ul class="des-title">
+                        <li><a href="">Sub Menu One</a></li>
+                        <li><a href="">Sub Menu Two</a></li>
+                        <li><a href="">Sub Menu Three</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><a href="./service.html" class="home-item">Services</a></li>
+                <li><a href="./about.html" class="home-item">About</a></li>
+                <li><a href="./contact.html" class="home-item">Contact</a></li>
+              </ul>
+            </div>
+
+            <div class="head-right">
+              <a href=""><i class="fa-solid fa-phone"></i></a>
+              <span>123-489-9381</span>
+            </div>
+          </div>
+
+          <div class="head-icon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="site">
+        <div class="container">
+          <div class="site-item">
+            <h1>Once a year go someplace you've never been before</h1>
+            <button id="model">See Video</button>
+          </div>
+
+          <div class="video-wrap">
+            <div class="video">
+              <iframe
+                width="300"
+                height="215"
+                src="https://www.youtube.com/embed/mwtbEGNABWU?si=7xNF6l3y6sVEZs4W"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="find-head">
+        <div class="container">
+          <div class="find">
+            <form action="" class="find-form">
+              <input type="text" placeholder="Search" />
+              <button class="find-btn">Find now</button>
+            </form>
+            <button class="show">Show All</button>
+          </div>
+        </div>
+      </section>
+      <div class="formModal">
+        <div class="backColor"></div>
+        <div class="formModalItem">
+          <form action="">
+            <label for=""> Icon: <input class="icon" type="text" /> </label>
+            <label for="">
+              Category: <input class="category" minlength="3" type="text" />
+            </label>
+            <label for=""> Title: <input class="title" type="text" /> </label>
+            <label for=""> Link: <input class="link" type="text" /> </label>
+            <button class="add-formModal">Add Service</button>
+            <p class="errorMsj"></p>
+          </form>
+          <div class="formModalBtn">
+            <button class="cancel-formModal">Cancel</button>
+          </div>
+        </div>
+      </div>
+      <section class="service">
+        <div class="container">
+          <div class="service-head">
+            <div class="service-head-btn">
+              <h1>OUR SERVICES</h1>
+              <button class="addSer">Add Service</button>
+              <select name="" id="sort-by-name">
+                <option value="a">A-Z</option>
+                <option value="z">Z-A</option>
+              </select>
+            </div>
+            <div class="serviceConta">
+              <div class="service-title"></div>
+            </div>
+            <div class="btn">
+              <button class="prev">Prev</button>
+              <button class="next">Next</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sec-wrap">
+        <div class="sec-about">
+          <div class="sec-head">
+            <div class="sec-img">
+              <img
+                src="https://preview.colorlib.com/theme/hotell/images/about_1.jpg.webp"
+                alt=""
+              />
+            </div>
+            <div class="sec-hotel">
+              <h2>ABOUT HOTELL</h2>
+              <p>
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts. Separated
+                they live in Bookmarksgrove right at the coast of the Semantics,
+                a large language ocean.
+              </p>
+              <p>
+                A small river named Duden flows by their place and supplies it
+                with the necessary regelialia. It is a paradisematic country, in
+                which roasted parts of sentences fly into your mouth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     <div class="formBlogWrap">
+      <div class="closeModal2"></div>
+      <div class="formBlog">
+        <form action="" class="formBlogHead">
+          <img class="formBlogImg"
+            src="https://preview.colorlib.com/theme/hotell/images/img_1.jpg.webp"
+            alt=""
+          />
+
+          <input type="text" class="formBlogInput"/>
+          <span>Lorem ipsum dolor sit amet.</span>
+          <button class="formBlogAdd">Add</button>
+        </form>
+        <button class="formBlogCancel">Cancel</button>
+      </div>
+     </div>
+
+      <section>
+        <div class="container">
+          <div class="blog">
+            <h2>BLOG POSTS</h2>
+            <div class="blogConc">
+              <div class="blog-title"></div>
+            </div>
+
+            <div class="btn">
+              <button class="prev">Prev</button>
+              <button class="next">Next</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="freq">
+        <div class="container">
+          <div class="freq-head">
+            <h2>FREQUENTLY ASKED QUESTIONS</h2>
+
+            <div class="freq-right">
+              <!-- <div>
+                <div class="freq-item">
+                  <h3>Is it free?</h3>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="freq-far">
+                  <p>
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts. Separated they live in Bookmarksgrove right at the
+                    coast of the Semantics, a large language ocean.
+                  </p>
+                  <p>
+                    A small river named Duden flows by their place and supplies
+                    it with the necessary regelialia. It is a paradisematic
+                    country, in which roasted parts of sentences fly into your
+                    mouth.
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <div class="freq-item">
+                  <h3>How to install this template?</h3>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="freq-far">
+                  <p>
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts. Separated they live in Bookmarksgrove right at the
+                    coast of the Semantics, a large language ocean.
+                  </p>
+                  <p>
+                    A small river named Duden flows by their place and supplies
+                    it with the necessary regelialia. It is a paradisematic
+                    country, in which roasted parts of sentences fly into your
+                    mouth.
+                  </p>
+                </div>
+              </div>
+
+              <div>
+                <div class="freq-item">
+                  <h3>Where can i get help?</h3>
+                  <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="freq-far">
+                  <p>
+                    Far far away, behind the word mountains, far from the
+                    countries Vokalia and Consonantia, there live the blind
+                    texts. Separated they live in Bookmarksgrove right at the
+                    coast of the Semantics, a large language ocean.
+                  </p>
+                  <p>
+                    A small river named Duden flows by their place and supplies
+                    it with the necessary regelialia. It is a paradisematic
+                    country, in which roasted parts of sentences fly into your
+                    mouth.
+                  </p>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <div class="formModalE">
+        <div class="backColor2"></div>
+        <div class="formModalItem2">
+          <form action="">
+            <label for=""> Image: <input class="imaEmp" type="file" /> </label>
+            <label for="">
+              Name: <input class="nameEmp" minlength="3" type="text" />
+            </label>
+            <label for=""> Comment: <input class="titleEmp" type="text" /> </label>
+            <label for=""> Position: <input class="posEmp" type="text" /> </label>
+            <button class="add-formModal">Add</button>
+            <p class="errorMsj2"></p>
+          </form>
+          <div class="formModalBtn">
+            <button class="cancel-formModal2">Cancel</button>
+          </div>
+        </div>
+      </div>
+
+
+      <section class="test-head">
+        <div class="container">
+          <div class="test">
+            <h2>TESTIMONIALS</h2>
+            <p>
+              A small river named Duden flows by their place and supplies it
+              with the necessary regelialia. It is a paradisematic country, in
+              which roasted parts of sentences fly into your mouth
+            </p>
+            <button class="addEmployee">add employee</button>
+          </div>
+          <div class="testConc">
+            <div class="test-title">
+              <!-- <div class="test-item">
+              <span><i class="fa-solid fa-quote-left"></i></span>
+              <p>
+                A small river named Duden flows by their place and supplies it
+                with the necessary regelialia. It is a paradisematic country, in
+                which roasted parts of sentences fly into your mouth.
+              </p>
+              <div class="test-wrap">
+                <div class="test-img">
+                  <img
+                    src="https://preview.colorlib.com/theme/hotell/images/person_1.jpg.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="test-word">
+                  <h4>John Doe</h4>
+                  <h6>Creative Director</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="test-item">
+              <span><i class="fa-solid fa-quote-left"></i></span>
+              <p>
+                A small river named Duden flows by their place and supplies it
+                with the necessary regelialia. It is a paradisematic country, in
+                which roasted parts of sentences fly into your mouth.
+              </p>
+              <div class="test-wrap">
+                <div class="test-img">
+                  <img
+                    src="https://preview.colorlib.com/theme/hotell/images/person_2.jpg.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="test-word">
+                  <h4>John Doe</h4>
+                  <h6>Creative Director</h6>
+                </div>
+              </div>
+            </div>
+
+            <div class="test-item">
+              <span><i class="fa-solid fa-quote-left"></i></span>
+              <p>
+                A small river named Duden flows by their place and supplies it
+                with the necessary regelialia. It is a paradisematic country, in
+                which roasted parts of sentences fly into your mouth.
+              </p>
+              <div class="test-wrap">
+                <div class="test-img">
+                  <img
+                    src="https://preview.colorlib.com/theme/hotell/images/person_1.jpg.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="test-word">
+                  <h4>John Doe</h4>
+                  <h6>Creative Director</h6>
+                </div>
+              </div>
+            </div> -->
+            </div>
+          </div>
+
+          <div class="btn">
+            <button class="testPrev">Prev</button>
+            <button class="testNext">Next</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="instagram-head">
+        <div class="container instagram-river">
+          <h2>INSTAGRAM</h2>
+          <p>
+            A small river named Duden flows by their place and supplies it with
+            the necessary regelialia. It is a paradisematic country, in which
+            roasted parts of sentences fly into your mouth.
+          </p>
+        </div>
+        <div class="instagram-title">
+          <div class="instagram-item">
+            <img
+              src="https://preview.colorlib.com/theme/hotell/images/img_4.jpg.webp"
+              alt=""
+            />
+            <div class="instagram-logo">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+
+          <div class="instagram-item">
+            <img
+              src="https://preview.colorlib.com/theme/hotell/images/img_3.jpg.webp"
+              alt=""
+            />
+            <div class="instagram-logo">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+
+          <div class="instagram-item">
+            <img
+              src="https://preview.colorlib.com/theme/hotell/images/img_1.jpg.webp"
+              alt=""
+            />
+            <div class="instagram-logo">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+
+          <div class="instagram-item">
+            <img
+              src="https://preview.colorlib.com/theme/hotell/images/img_2.jpg.webp"
+              alt=""
+            />
+            <div class="instagram-logo">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+
+          <div class="instagram-item">
+            <img
+              src="https://preview.colorlib.com/theme/hotell/images/img_4.jpg.webp"
+              alt=""
+            />
+            <div class="instagram-logo">
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="foot-head">
+          <div class="foot-item">
+            <h2>Home</h2>
+            <ul>
+              <li><a href="">About us</a></li>
+              <li><a href="">Places</a></li>
+              <li><a href="">Services</a></li>
+              <li><a href="">Destination</a></li>
+              <li><a href="">Terms</a></li>
+              <li><a href="">Privacy</a></li>
+            </ul>
+          </div>
+
+          <div class="foot-item">
+            <h2>Practice Area</h2>
+            <ul>
+              <li><a href="">Travel</a></li>
+              <li><a href="">Popular places</a></li>
+              <li><a href="">Destination</a></li>
+              <li><a href="">Tour</a></li>
+              <li><a href="">Family Vacation</a></li>
+            </ul>
+          </div>
+
+          <div class="foot-item">
+            <h2>Services</h2>
+            <ul>
+              <li><a href="">Tour</a></li>
+              <li><a href="">Swimming</a></li>
+              <li><a href="">Kayak</a></li>
+              <li><a href="">Surfing</a></li>
+            </ul>
+          </div>
+
+          <div class="foot-item">
+            <h2>Contact</h2>
+            <span>43 Raymouth Rd. Baltemoer, London 3910</span>
+            <ul>
+              <li><a href="">+1(123)-456-7890 </a></li>
+              <li><a href="">+1(123)-456-7890 </a></li>
+              <li><a href="">info@mydomain.com</a></li>
+            </ul>
+            <p>Connect</p>
+            <ul class="foot-ul">
+              <li>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-pinterest"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-solid fa-basketball"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="foot-copy">
+          Copyright ©2024 All rights reserved | This template is made with
+          <i class="fa-solid fa-heart"></i> by Colorlib
+        </p>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
